@@ -1,11 +1,10 @@
-﻿using AdminDashboard.Areas.Identity.Data;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace AdminDashboard.Data;
 
-public class AdminDashboardContext : IdentityDbContext<AdminDashboardUser>
+public class AdminDashboardContext : IdentityDbContext<IdentityUser>
 {
     public AdminDashboardContext(DbContextOptions<AdminDashboardContext> options)
         : base(options)
