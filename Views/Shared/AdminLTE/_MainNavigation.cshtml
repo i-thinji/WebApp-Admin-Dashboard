@@ -47,14 +47,33 @@ else
                     </li>
                 }
 
-                li class="nav-item ">
-                <a asp-controller="Home" asp-action="DashboardV2" class="nav-link @Url.MakeActiveClass("home","dashboardv2")">
-                    <i class="nav-icon fas fa-lock"></i>
-                    <p>
-                        Dashboard V2
-                    </p>
-                </a>
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Dashboard" class="nav-link @Url.MakeActiveClass("home","dashboard")">
+                        <i class="nav-icon fas fa-newspaper"></i>
+                        <p>
+                            Dashboard 
+                        </p>
+                    </a>
                 </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="DashboardV2" class="nav-link @Url.MakeActiveClass("home","dashboardv2")">
+                        <i class="nav-icon fas fa-newspaper"></i>
+                        <p>
+                            Dashboard V2
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="DashboardV3" class="nav-link @Url.MakeActiveClass("home","dashboardv3")">
+                        <i class="nav-icon fas fa-newspaper"></i>
+                        <p>
+                            Dashboard V3
+                        </p>
+                    </a>
+                </li>
+
             </ul>
         </nav>
     </div>

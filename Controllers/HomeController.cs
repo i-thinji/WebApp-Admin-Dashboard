@@ -22,9 +22,18 @@ namespace AdminDashboard.Controllers
         {
             return View();
         }
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
 
         public IActionResult DashboardV2()
         {
+            return View();
+        }
+
+        public IActionResult DashboardV3()
+        { 
             return View();
         }
 
